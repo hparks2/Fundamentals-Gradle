@@ -1,0 +1,19 @@
+group 'com.harrisonparks'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+mainClassName = 'com.harrisonparks.Main'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.6.1'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
